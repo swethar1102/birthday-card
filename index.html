@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a1025" />
+  <title>For You ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main>
+    <!-- Opening screen -->
+    <section id="intro" class="screen active">
+      <div class="intro-content">
+        <div class="tiny-label">A little something for you</div>
+
+        <div class="gift" id="gift" role="button" tabindex="0" aria-label="Open your birthday surprise">
+          <div class="gift-lid"></div>
+          <div class="gift-box"></div>
+          <div class="gift-ribbon ribbon-v"></div>
+          <div class="gift-ribbon ribbon-h"></div>
+          <div class="gift-bow bow-left"></div>
+          <div class="gift-bow bow-right"></div>
+        </div>
+
+        <h1>Happy Birthday, <span class="accent">my love</span> ❤️</h1>
+        <p class="subtitle">I made you a little something.</p>
+
+        <button id="openBtn" class="primary-btn">
+          Open your surprise <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Letter screen -->
+    <section id="letter" class="screen">
+      <div class="letter-card">
+        <div class="letter-top">
+          <span>FOR MY FAVORITE PERSON</span>
+          <span>♥</span>
+        </div>
+
+        <h2>To <span id="boyfriendName">My Love</span>,</h2>
+
+        <div id="message" class="message" aria-live="polite"></div>
+
+        <div id="signature" class="signature hidden">
+          <p>Happy birthday, handsome. ❤️</p>
+          <span>— Your girl</span>
+        </div>
+
+        <button id="memoriesBtn" class="primary-btn hidden">
+          One more surprise <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Memories screen -->
+    <section id="memories" class="screen">
+      <div class="memories-content">
+        <div class="tiny-label">A few of my favorite memories</div>
+        <h2>Us, in little moments. <span class="accent">♡</span></h2>
+        <p class="memory-intro"></p>
+
+        <div class="polaroids">
+
+          <figure class="polaroid p1">
+            <img src="images/photo1.jpg" alt="A favorite memory of us">
+            <figcaption>One of my favorite pictures with you. ❤️</figcaption>
+          </figure>
+        
+          <figure class="polaroid p2">
+            <img src="images/photo2.jpg" alt="A favorite memory of us">
+            <figcaption>How I'll always look at you</figcaption>
+          </figure>
+        
+          <figure class="polaroid p3">
+            <img src="images/photo3.jpg" alt="A favorite memory of us">
+            <figcaption>The love of my life</figcaption>
+          </figure>
+        
+        </div>
+
+        <button id="finalBtn" class="primary-btn">Okay, one last thing... <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- Final screen -->
+    <section id="final" class="screen">
+      <div class="final-content">
+        <div id="bigHeart" class="big-heart">♥</div>
+        <div class="tiny-label">A little birthday code</div>
+
+        <pre class="code-card"><code><span class="keyword">const</span> myFavoritePerson = <span class="string">"you"</span>;
+
+<span class="keyword">if</span> (today.isYourBirthday()) {
+  giveYouAllMyLove();
+  makeYouSmile();
+  celebrateAndAnnoyYou();
+}
+
+<span class="comment">// every single day ❤️</span></code></pre>
+
+        <h2>Happy Birthday, <span class="accent">my love</span>.</h2>
+        <p class="final-message">
+          I hope this year brings you everything you deserve.
+          Thank you for being you, and thank you for letting me be
+          part of your life. I love you more than this little website
+          could ever say. ❤️
+        </p>
+
+        <button id="celebrateBtn" class="primary-btn">Celebrate! 🎉</button>
+
+        <p class="made-with">Made with way too much love & a little JavaScript.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
