@@ -52,9 +52,7 @@ I hope you always know that you have my whole heart.
 
 And no matter how many miles are between us, no matter how many arguments we have, no matter what life throws at us, there is one thing I will always know for sure:
 
-I love you. And I always will.
-
-Happy birthday, baby. I love you more than you know. ❤️`;
+I love you. And I always will.`;
 
 // ============================================================
 // PAGE LOGIC
